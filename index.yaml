@@ -3,14 +3,14 @@ entries:
   kong:
   - apiVersion: v2
     appVersion: "3.1"
-    created: "2023-03-13T04:20:54.397403448Z"
+    created: "2023-03-18T19:24:24.726722991Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
-    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
+    digest: a2fb66ecc50911e913e73b71298d9cd9a8bea467894e347963a1511319183c8e
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -34,6 +34,29 @@ entries:
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
     digest: fc3d2c2ca5ef3c19c8e1bbf20a3290dd41af53919c0ad38ae6ad1469a6a8e15f
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-2.17.0-rc.4/kong-2.17.0-rc.4.tgz
+    version: 2.17.0-rc.4
+  - apiVersion: v2
+    appVersion: "3.1"
+    created: "2023-03-13T04:20:54.397403448Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: The Cloud-Native Ingress and API-management
+    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -319,4 +342,4 @@ entries:
     urls:
     - https://github.com/Kong/charts/releases/download/kong-0.36.5/kong-0.36.5.tgz
     version: 0.36.5
-generated: "2023-03-13T04:20:54.397826845Z"
+generated: "2023-03-18T19:24:24.726966497Z"
