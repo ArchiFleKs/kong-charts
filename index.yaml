@@ -3,6 +3,29 @@ entries:
   kong:
   - apiVersion: v2
     appVersion: "3.2"
+    created: "2023-04-26T22:45:58.427870751Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: The Cloud-Native Ingress and API-management
+    digest: ef1f0d6b2c20dfd6f95532f23fb49ffebac179c67a5b402c7c3ee40fa26dfc39
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-2.20.0/kong-2.20.0.tgz
+    version: 2.20.0
+  - apiVersion: v2
+    appVersion: "3.2"
     created: "2023-04-24T21:45:45.906118995Z"
     dependencies:
     - condition: postgresql.enabled
@@ -164,14 +187,14 @@ entries:
     version: 2.17.0-rc.4
   - apiVersion: v2
     appVersion: "3.1"
-    created: "2023-03-13T04:20:54.397403448Z"
+    created: "2023-03-18T19:24:24.726722991Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
-    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
+    digest: a2fb66ecc50911e913e73b71298d9cd9a8bea467894e347963a1511319183c8e
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -187,14 +210,14 @@ entries:
     version: 2.17.0-rc.4
   - apiVersion: v2
     appVersion: "3.1"
-    created: "2023-03-18T19:24:24.726722991Z"
+    created: "2023-03-13T04:20:54.397403448Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
-    digest: a2fb66ecc50911e913e73b71298d9cd9a8bea467894e347963a1511319183c8e
+    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -480,4 +503,4 @@ entries:
     urls:
     - https://github.com/Kong/charts/releases/download/kong-0.36.5/kong-0.36.5.tgz
     version: 0.36.5
-generated: "2023-04-24T21:45:45.906376098Z"
+generated: "2023-04-26T22:45:58.428049453Z"
