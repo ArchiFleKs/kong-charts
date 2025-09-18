@@ -90,6 +90,27 @@ entries:
   kong:
   - apiVersion: v2
     appVersion: "3.9"
+    created: "2025-09-18T11:33:08.373928341Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: The Cloud-Native Ingress and API-management
+    digest: 08f2a751443f1b577c92104d3639652f38404df04462a10ce3e8df770cddbf7e
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: team-k8s@konghq.com
+      name: team-k8s-bot
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-2.52.0/kong-2.52.0.tgz
+    version: 2.52.0
+  - apiVersion: v2
+    appVersion: "3.9"
     created: "2025-07-14T23:33:09.025807155Z"
     dependencies:
     - condition: postgresql.enabled
@@ -362,6 +383,29 @@ entries:
     version: 2.17.0-rc.5
   - apiVersion: v2
     appVersion: "3.1"
+    created: "2023-03-13T04:20:54.397403448Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: The Cloud-Native Ingress and API-management
+    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-2.17.0-rc.4/kong-2.17.0-rc.4.tgz
+    version: 2.17.0-rc.4
+  - apiVersion: v2
+    appVersion: "3.1"
     created: "2023-03-04T22:10:13.711277521Z"
     dependencies:
     - condition: postgresql.enabled
@@ -393,29 +437,6 @@ entries:
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
     digest: a2fb66ecc50911e913e73b71298d9cd9a8bea467894e347963a1511319183c8e
-    home: https://konghq.com/
-    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
-    maintainers:
-    - email: harry@konghq.com
-      name: hbagdi
-    - email: traines@konghq.com
-      name: rainest
-    name: kong
-    sources:
-    - https://github.com/Kong/charts/tree/main/charts/kong
-    urls:
-    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-2.17.0-rc.4/kong-2.17.0-rc.4.tgz
-    version: 2.17.0-rc.4
-  - apiVersion: v2
-    appVersion: "3.1"
-    created: "2023-03-13T04:20:54.397403448Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 11.9.13
-    description: The Cloud-Native Ingress and API-management
-    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -703,6 +724,48 @@ entries:
     version: 0.36.5
   kong-operator:
   - annotations:
+      artifacthub.io/category: networking
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://developer.konghq.com/operator/
+        - name: Repository
+          url: https://github.com/Kong/kong-operator
+      artifacthub.io/operator: "true"
+      artifacthub.io/operatorCapabilities: Seamless Upgrades
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: "2.0"
+    created: "2025-09-18T11:33:08.639745986Z"
+    dependencies:
+    - name: ko-crds
+      repository: ""
+      version: 1.0.0
+    - condition: kic-crds.enabled
+      name: kic-crds
+      repository: ""
+      version: 1.2.0
+    - condition: gwapi-standard-crds.enabled
+      name: gwapi-standard-crds
+      repository: ""
+      version: 1.3.0
+    - condition: gwapi-experimental-crds.enabled
+      name: gwapi-experimental-crds
+      repository: ""
+      version: 1.3.0
+    description: Deploy Kong Operator
+    digest: 1d15295924ceeaa37fd01827a7d4f6f488ea65af24be4f98433869a9fcb312c7
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: team-k8s@konghq.com
+      name: team-k8s-bot
+    name: kong-operator
+    sources:
+    - https://github.com/Kong/kong-operator/charts/kong-operator/
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-operator-1.0.1/kong-operator-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
       artifacthub.io/prerelease: "true"
     apiVersion: v2
     appVersion: 2.0.0
@@ -932,4 +995,4 @@ entries:
     urls:
     - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-operator-0.0.1/kong-operator-0.0.1.tgz
     version: 0.0.1
-generated: "2025-09-10T17:33:27.785034788Z"
+generated: "2025-09-18T11:33:08.639992528Z"
