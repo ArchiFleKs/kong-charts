@@ -90,6 +90,27 @@ entries:
   kong:
   - apiVersion: v2
     appVersion: "3.9"
+    created: "2025-12-02T23:33:33.647468906Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: The Cloud-Native Ingress and API-management
+    digest: 64697d749e08e9de13c0e4491b31519d495a27e768015ea252ca7a58fc2f8551
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: team-k8s@konghq.com
+      name: team-k8s-bot
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-3.0.0/kong-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
+    appVersion: "3.9"
     created: "2025-09-18T11:33:08.373928341Z"
     dependencies:
     - condition: postgresql.enabled
@@ -383,14 +404,14 @@ entries:
     version: 2.17.0-rc.5
   - apiVersion: v2
     appVersion: "3.1"
-    created: "2023-03-13T04:20:54.397403448Z"
+    created: "2023-03-04T22:10:13.711277521Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
-    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
+    digest: fc3d2c2ca5ef3c19c8e1bbf20a3290dd41af53919c0ad38ae6ad1469a6a8e15f
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -406,14 +427,14 @@ entries:
     version: 2.17.0-rc.4
   - apiVersion: v2
     appVersion: "3.1"
-    created: "2023-03-04T22:10:13.711277521Z"
+    created: "2023-03-13T04:20:54.397403448Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.9.13
     description: The Cloud-Native Ingress and API-management
-    digest: fc3d2c2ca5ef3c19c8e1bbf20a3290dd41af53919c0ad38ae6ad1469a6a8e15f
+    digest: 4d2fcdd99b83100db9851683c91930382ad2fd259b04ba4dc12e0dd8a92b24f5
     home: https://konghq.com/
     icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
     maintainers:
@@ -1033,4 +1054,4 @@ entries:
     urls:
     - https://github.com/ArchiFleKs/kong-charts/releases/download/kong-operator-0.0.1/kong-operator-0.0.1.tgz
     version: 0.0.1
-generated: "2025-10-01T11:34:06.426232601Z"
+generated: "2025-12-02T23:33:33.912693598Z"
